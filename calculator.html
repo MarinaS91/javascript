@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+   <html>
+      <head>
+         <title>Главная</title>
+         <meta charset="utf-8" />
+         <link rel="stylesheet" href="indexCss.css">
+         <style>
+            body { background: url(http://vladmaxi.net/uploads/2013/04/Metallicheskiy-fon-MetalNice-fon-dlya-stranitsyi-sayta-500x300.jpg); }
+         </style>
+         <script src="calc.js"></script>
+      </head>
+         <body>
+            <header> 
+               <div style="border-radius: 10px;" class="radius">
+               <a href="./index.html">
+                  <img src="./webLogo.png" alt="image HTML5" width="150" height="75" class="leftimg" />
+               </a>
+                  <h1>Основы Web-технологий</h1>
+                     <nav>
+                        <ul class="menu">
+                           <li><a href="main.html">Главная</a></li>
+                           <li> <a href="web.html">Web-технологии</a>
+                              <ul>
+                                 <li><a href="html5.html">HTML5</a></li>
+                                 <li><a href="css3.html">CSS3</a></li>
+                                 <li><a href="javaScript.html">JavaScript</a></li>
+                              </ul>
+                           </li>
+                              <li><a href="calculator.html">Калькулятор</a></li>
+                              <li><a href="testik.html">Тест</a></li>
+                        </ul>
+                     </nav> 
+               </div>
+            </header>
+         <div style="border-radius: 10px;" class="radius">
+            <form name="calculator" class="calc"> 
+              <p class="calc-display"> 
+                  <input type="text" name="answer" class="calc-display-input" maxlength="10" onChange="CheckNumber(this.value)">
+                   <input type="button" name="backspace" class="calc-b-blue" value="Backspace" onClick="Backspace(document.calculator.answer.value); return false;">
+              </p> 
+               <p class="calc-row"> 
+                  <button type="button" class="calc-button calc-button-gray" value="+/- " onClick="NegateButton(); return false;"> +/-</button> 
+                  <button type="button" class="calc-button calc-button-gray" value="sqrt" onClick="SqrtButton(); return false;">sqrt</button> 
+                  <button type="button" class="calc-button calc-button-gray" value=" 1/x " onClick="RecipButton(); return false;">1/x</button> 
+                  <button type="button" class="calc-button calc-button-DimGrey calc-button-big" value="  /  " onClick="DivButton(1); return false;">÷</button> 
+              </p> 
+               <p class="calc-row"> 
+                  <button type="button" class="calc-button" value="  7  " onClick="CheckNumber('7'); return false;">7</button> 
+                  <button type="button" class="calc-button" value="  8  " onClick="CheckNumber('8'); return false;">8</button> 
+                  <button type="button" class="calc-button" value="  9  " onClick="CheckNumber('9'); return false;">9</button> 
+                  <button type="button" class="calc-button calc-button-DimGrey calc-button-big" value="  *  " onClick="MultButton(1); return false;">x</button> 
+              </p> 
+               <p class="calc-row"> 
+                 <button type="button" class="calc-button" value="  4  " onClick="CheckNumber('4'); return false;">4</button> 
+                 <button type="button" class="calc-button" value="  5  " onClick="CheckNumber('5'); return false;">5</button> 
+                 <button type="button" class="calc-button" value="  6  " onClick="CheckNumber('6'); return false;">6</button> 
+                 <button type="button" class="calc-button calc-button-DimGrey calc-button-big" value="  -  " onClick="SubButton(1); return false;">-</button> 
+              </p> 
+               <p class="calc-row"> 
+                 <button type="button" class="calc-button" value="  1  " onClick="CheckNumber('1'); return false;">1</button> 
+                 <button type="button" class="calc-button" value="  2  " onClick="CheckNumber('2'); return false;">2</button> 
+                 <button type="button" class="calc-button" value="  3  " onClick="CheckNumber('3'); return false;">3</button> 
+                 <button type="button" class="calc-button calc-button-DimGrey calc-button-big" value=" +  " onClick="AddButton(1); return false;">+</button> 
+              </p> 
+               <p class="calc-row"> 
+                 <button type="button" class="calc-button" value="  0  " onClick="CheckNumber('0'); return false;">0</button> 
+                 <button type="button" class="calc-button"  value="  .   " onClick="CheckNumber('.'); return false;">.</button> 
+                 <button type="button" class="calc-button" value="  C  " onClick="ClearCalc(); return false;">C</button> 
+                 <button type="button" class="calc-button calc-button-DarkRed calc-button-big" value="  =   " onClick="EqualButton(); return false;">=</button> 
+              </p> 
+            </form> 
+         </div>
+            <footer>
+               <div style="border-radius: 10px;" class="radius" >
+                  <address>
+                     <p class="center"><a href="mail.html">Пишите: mail@mail</a></p>
+                  </address>
+                     <p class="center">&copy; Фамилия И.О.,год</p> 
+               </div>
+            </footer>
+         </body>
+</html>
+
+
+
